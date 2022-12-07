@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pagina mea web</title>
+  </head>
+  
+  <body>
+    <nav id="navbar">
+      <div class="logo">
+        <img src="Logo.jpg" alt="Logo" />
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portofolio.html">Portofolio</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+
+      <h1>Pagina mea web</h1>
+
+      <p>
+        Aici puteti afla lucruri despre mine. Daca sunteti interesati, apasati pe butonul de mai jos!
+      </p>
+
+      <button class="cta-btn" id="open">Sign Up</button>
+    </header>
+    <div class="container">
+      <h2>Cine sunt?</h2>
+      <p>
+        Ma numesc Paraschiv Beniamin-Otniel si vin din orasul Turnu Magurele din Romania.
+      </p>
+
+      <h2>Mai multe despre mine</h2>
+
+      <p>
+        Sunt pasionat de muzica. La varsta de 11 ani am inceput sa cant la chitara, iar la 14 ani deja imi compuneam propriile melodii in programul Fl Studio 12.
+      </p>
+
+      <p>
+        Acum am o experienta de 6 ani de produs muzica si sunt dornic sa lucrez cu producatori care se afla la inceput si nu reusesc in acest domeniu. Ofer cursuri folositoare pentru productia muzicala si pot preda si chitara acustica si chitara electrica.
+      </p>
+
+      <p>
+        Daca sunteti dornici sa lucram impreuna, nu uitati sa ma contactati pentru mai multe informatii sau sa va inscrieti prin butonul "Sign Up".
+      </p>
+
+      <h2>Beneficii</h2>
+      <ul>
+        <li>Pentru incepatori, ofer o ora gratuita pentru a incelege si a putea ajuta mai bine producatorul;</li>
+        <li>Daca un client nu este multumit, i se pot returna banii inapoi daca feedback-ul sau este valid;</li>
+        <li>Sunt activ toata ziua si pot raspunde oricarui mesaj in maxim 20 de minute;</li>
+      </ul>
+
+      <p>
+        Daca nu v-am convins dar mai vreti lamuriri, contactati-ma la adresa personala de email sau la numarul de telefon atasat site-ului.
+      </p>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Sign Up</h3>
+        </div>
+        <div class="modal-content">
+          <p>Register with us to get offers, support and more</p>
+          <form class="modal-form">
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter Name"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="password2">Confirm Password</label>
+              <input
+                type="password"
+                id="password2"
+                placeholder="Confirm Password"
+                class="form-input"
+              />
+            </div>
+            <input type="submit" value="Submit" class="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
